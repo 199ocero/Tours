@@ -126,7 +126,7 @@ nav{
     max-width: 50rem;
     color: #eeeeee;
     text-transform: uppercase;
-    transform: translateY(45%);
+    transform: translateY(20%);
 }
 .main-message h3{
     font-size: 1.6rem;
@@ -153,6 +153,23 @@ nav{
     background-color: #b30600;
 }
 
+.about-us{
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.title-heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0,0,0,.7);
+}
+.title-heading h3{
+    font-size: 1.4rem;
+}
+.title-heading h1{
+    font-family: 'Aldrich',sans-serif;
+}
 
 /* Break points */
 @media screen and (min-width: 470px){
