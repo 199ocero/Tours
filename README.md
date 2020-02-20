@@ -35,5 +35,5 @@ Git Commands
 # To Pull Changes instructions:
 git pull origin master // to pull changes
 
-# Link to sourc code
+# Link to source code
 https://github.com/chardestrada24/2019_2020_IT2R3_2nd_Semester/
