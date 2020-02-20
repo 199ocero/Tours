@@ -126,7 +126,7 @@ nav{
     max-width: 50rem;
     color: #eeeeee;
     text-transform: uppercase;
-    transform: translateY(20%);
+    transform: translateY(50%);
 }
 .main-message h3{
     font-size: 1.6rem;
@@ -165,12 +165,33 @@ nav{
     color: rgba(0,0,0,.7);
 }
 .title-heading h3{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 }
 .title-heading h1{
     font-family: 'Aldrich',sans-serif;
+    font-size: 3rem;
+    margin: .5rem 0 1rem;
 }
-
+.title-heading p{
+    text-transform: lowercase;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.about-us-item{
+    float: left;
+    width: 50%;
+    padding: 4rem;
+    cursor: pointer;
+    
+}
+.hiking{
+    background: linear-gradient(180deg, rgba(0, 15, 22, 0.801) 100%, rgba(15, 0, 80, 0) 0%);
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
 /* Break points */
 @media screen and (min-width: 470px){
     .hero::before{
@@ -207,5 +228,11 @@ nav{
         color: #eeeeee;
         position: relative;
         font-size: 1.3rem;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .about-us-item{
+        width: 100%;
     }
 }
