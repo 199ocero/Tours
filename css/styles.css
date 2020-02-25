@@ -317,5 +317,76 @@ nav{
     .about-us .card-container .card{
         width: 100%; 
     }
+    .title-heading h3{
+        font-size: 2rem;
+    }
+    .title-heading h1{
+        font-family: 'Aldrich',sans-serif;
+        font-size: 2.5rem;
+        margin: .5rem 0 1rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .main-message{
+        width: 100%;
+        max-width: 10rem;
+        color: #eeeeee;
+        text-transform: uppercase;
+        transform: translateY(20%);
+    }
+    .main-message h3{
+        font-size: 1rem;
+    }
+    .main-message h1{
+        font-family: 'Aldrich',sans-serif;
+        font-size: 2rem;
+        margin: 1rem 0; 
+    }
+    .main-message p{
+        text-transform: lowercase;
+        font-size: 1rem;
+    }
 
+}
+@media screen and (max-width: 360px){
+    .card-container .box a{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 .5px;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+    }
+    .main-message{
+        width: 100%;
+        max-width: 50rem;
+        color: #eeeeee;
+        text-transform: uppercase;
+        transform: translateY(30%);
+    }
+}
+@media screen and (max-width: 411px){
+    .card-container .box a{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 10px;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+    }
+    .main-message{
+        width: 100%;
+        max-width: 50rem;
+        color: #eeeeee;
+        text-transform: uppercase;
+        transform: translateY(45%);
+    }
+    .title-heading h3{
+        font-size: 1.5rem;
+    }
+    .title-heading h1{
+        font-family: 'Aldrich',sans-serif;
+        font-size: 2rem;
+        margin: .5rem 0 1rem;
+    }
 }
