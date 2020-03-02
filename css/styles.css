@@ -140,7 +140,7 @@ li:hover span{
     max-width: 50rem;
     color: #eeeeee;
     text-transform: uppercase;
-    transform: translateY(50%);
+    transform: translateY(80%);
 }
 .main-message h3{
     font-size: 1.6rem;
@@ -326,6 +326,7 @@ li:hover span{
     margin: 2rem;
     background-color: #1b222571;
     border-radius: 5%;
+    transition: 0.5s ease-out;
 }
 .service-icon{
     display: inline-block;
@@ -336,7 +337,7 @@ li:hover span{
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 20px;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-out;
 }
 .service-icon i{
     line-height: 70px;
@@ -346,6 +347,9 @@ li:hover span{
 .service-box:hover .service-icon{
     background-color: #ee4540;
     color: #eeeeee;
+}
+.service-box:hover{
+    transform: scale(1.2);
 }
 .service-title{
     width: 100%;
