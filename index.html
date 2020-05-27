@@ -5,7 +5,7 @@
         <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tours | Home</title>
+        <title>Tours</title>
         <!--Ion Icons-->
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <!--Google Fonts-->
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
         <!--Fav Icon-->
-        <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="images/fav-icon.svg" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -26,7 +26,7 @@
                     <!--Logo/Brand-->
                     <div class="nav-brand">
                         <a href="index.html">
-                            <img src="images/logo.svg" alt="Logo">
+                            <img src="images/fav-icon.svg" class ="logo" alt="Logo">
                         </a>
                     </div>
                     <!--Hamburger Menu Open-->
@@ -96,7 +96,7 @@
                         </p>
                         <!--Call to Action-->
                         <div class="cta">
-                            <a href="#" class="btn">Contact Us</a>
+                            <a href="#contact" class="btn">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -155,11 +155,8 @@
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>    
                         </div>
-                    </div> 
-                </div>
-                <div class="cta">
-                    <a class="btn" href="pages/about.html">Read More</a>
-                </div>
+                    </div>
+                </div>   
             </section>
             <section class="services" id="services">
                 <div class="container">
@@ -238,67 +235,35 @@
                     </div>
                 </div>
             </section>
-            <section class="call-to-action" id="contact">
+            <section class="contact-form" id="contact">
                 <div class="container">
-                    <div class="cta-message">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio reprehenderit error quam sint blanditiis. 
-                        </p>
-                    </div>
-                    <div class="cta-button">
-                        <a class="button" href="#">CONTACT US NOW!</a>
+                    <span class="border-up"></span>
+                        <h1>Get in Touch with Us</h1>
+                    <span class="border-bottom"></span>
+                    <div class="whole-contact">
+                        <input type="text" class="name" placeholder="Your Name">
+                        <input type="email" class="email" placeholder="Your Email">
+                        <textarea rows = "5" placeholder="Message" class="message"></textarea>
+                        <button>SEND</button>
                     </div>
                 </div>
             </section>
-            <footer>
-                <div class="container">
-                    <div class="col">
-                        <div class="contact-info">   
-                            <p>
-                                CONTACT INFO
-                            </p>
-                            <div class="icons">
-                                <i class="fas fa-map-marked-alt">Address: JT Macanhan, Carmen, Cagayan de Oro City</i>
-                            </div>
-                            <div class="icons">
-                                <i class="fas fa-envelope-open-text">Email: 199ocero@gmail.com</i>
-                            </div>
-                            <div class="icons">
-                                <i class="fas fa-phone-volume">Phone: 09753862538</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="social-media">
-                            <p>
-                                Social Media
-                            </p>
-                            <div class="soc-icons">
-                                <i class="fab fa-facebook"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="links">
-                            <p>Links</p>
-                            <div class="link-icons">
-                                <i class="fas fa-home"><a href="#">Home</a></i>
-                            </div>
-                            <div class="link-icons">
-                                <i class="fas fa-address-card"><a href="#">About Us</a></i>
-                            </div>
-                            <div class="link-icons">
-                                <i class="fas fa-phone-volume"><a href="#">Contact Us</a></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </main>
 
+        <footer>
+            <div class="footer-container">
+                <div class="left-col">
+                    <img src="images/main-logo.svg" alt="">
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a> 
+                        <a href="#"><i class="fab fa-youtube"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

@@ -45,6 +45,7 @@ header{
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+
 nav{
     width: 100%;
     display: flex;
@@ -57,7 +58,7 @@ nav{
     border-bottom: 1px solid #ee4540;
     box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.54);
 }
-.nav-brand{
+.nav-brand .logo{
     width: 3.5rem;
 }
 .menu-icons i{
@@ -197,9 +198,6 @@ li:hover span{
 .about-us .container{
     text-align: center;
 }
-.about-us .cta .btn{
-    margin: 4rem 0;
-}
 .border-up{
     display: block;
     margin: auto;
@@ -225,6 +223,7 @@ li:hover span{
     color: #eeee;
     overflow: hidden;
 }
+
 .about-us .card-container .card{
     float: left;
     width: calc(100%/3);
@@ -287,6 +286,9 @@ li:hover span{
     background-color: #ee4540;
     margin-top: 20px;
     border-radius: 90%;
+}
+.card-container .space{
+    margin-bottom: 7rem;
 }
 
 /* Services */
@@ -366,58 +368,68 @@ li:hover span{
     padding: 0;
 }
 /* Call to Action */
-.call-to-action{
+.contact-form{
     text-align: center;
     background-color: #1b262c;
+    padding: 80px 0;
 }
-.call-to-action .container{
-    width: 100%;
-    max-width: 1200px;
-    height: 40vh;
+.contact-form .container{
+    max-width: 600px;
     margin: auto;
-    pad: 0 20px;
+    padding: 0 20px;
 }
-.cta-message p{
+
+.contact-form .container h1{
     text-align: center;
     color: #eeeeee;
     text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
-    font-size: 3.5rem;
-    margin-top: 10rem;
-}
-.cta-button .button{
-    margin-top: 10rem;
-    background-color: #1b262c;
-    border-radius: 2rem;
-    border: 2px solid #ee4540;
-    color: #eeeeee;
-    display: inline-block;
-    padding: 3rem 6rem;
-    text-transform: uppercase;
-    transition: ease-in-out 400ms;
+    font-family: 'Aldrich',sans-serif;
     font-size: 3rem;
-    letter-spacing: 1rem;
+}
+
+.contact-form .whole-contact {
+    margin-top: 4rem;
+}
+
+.contact-form .name, .email, .message{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.contact-form .name{
+    float: left;
+    width: 270px;
+}
+.contact-form .email{
+    float: right;
+    width: 270px;
+}
+.contact-form .message{
+    min-width: 100%;
+    max-width: 100%;
+}
+.contact-form button{
+    background: none;
+    color: #ee4540;
+    border: 1px solid #ee4540;
+    padding: 12px 100px;
+    border-radius: 4px;
+    transition: ease-in-out 500ms;
     cursor: pointer;
 }
-.cta-button .button:hover{
+.contact-form button:hover{
+    background-color: #ee4540;
     transform: scale(1.2);
+    color: white;
 }
 
 /* Footer */
-footer{
-    height: 20vh;
-    background: #061116;
-}
-.col{
-    float: left;
-    width: calc(100%/3);
-    padding: 5rem;
-}
-footer .container::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 
 
@@ -430,6 +442,7 @@ footer .container::after{
     }
 }
 @media screen and (min-width: 700px){
+    
     header{
         height: 8rem;
     }
@@ -461,6 +474,12 @@ footer .container::after{
     
 }
 @media screen and (max-width: 600px){
+    .contact-form .container .name{
+        width: 100%;
+    }
+    .contact-form .container .email{
+        width: 100%;
+    }
     .about-us .card-container .card{
         width: 100%; 
     }
@@ -472,6 +491,7 @@ footer .container::after{
         font-size: 2.5rem;
         margin: .5rem 0 1rem;
     }
+    
 }
 @media screen and (max-width: 320px){
     .main-message{
