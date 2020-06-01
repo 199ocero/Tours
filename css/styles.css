@@ -417,8 +417,8 @@ li:hover span{
     background: none;
     color: #ee4540;
     border: 1px solid #ee4540;
-    padding: 12px 100px;
-    border-radius: 4px;
+    padding: 18px 100px;
+    border-radius: 30px;
     transition: ease-in-out 500ms;
     cursor: pointer;
 }
@@ -430,7 +430,89 @@ li:hover span{
 
 /* Footer */
 
+footer{
+    background: #141d20;
+    padding: 30px 0;
+}
 
+footer .footer-container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.left-col p{
+    color: white;
+}
+.logo-btm{
+    width: 180px;
+}
+.social-media{
+    margin: 10px 0;
+}
+.social-media a i{
+    color: #ee4540;
+    margin-right: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+.social-media i:hover{
+    transform: scale(2.5);
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background:#ee4540;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.right-col h1{
+    font-size: 26px;
+    color: white;
+}
+.right-col p{
+    color: white;
+}
+.news-letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.news-letter .email-news{
+    flex: 1;
+    padding: 18px 25px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+.btn-news{
+    padding: 18px 40px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+    background: none;
+    color: #ee4540;
+    border: 1px solid #ee4540;
+    transition: ease-in-out 500ms;
+}
+.btn-news:hover{
+    background-color: #ee4540;
+    transform: scale(1.2);
+    color: white;
+}
 
 
 /* Break points */
@@ -439,6 +521,19 @@ li:hover span{
         height: 20rem;
         background: url('../images/wave-large.png') center no-repeat;
         background-size: cover;
+    }
+}
+@media screen and (max-width: 960px){
+    .footer-container{
+        max-width: 600px;
+    }
+    .right-col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .left-col{
+        width: 100%;
+        text-align: center;
     }
 }
 @media screen and (min-width: 700px){
@@ -491,7 +586,11 @@ li:hover span{
         font-size: 2.5rem;
         margin: .5rem 0 1rem;
     }
-    
+    .btn-news{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 320px){
     .main-message{
